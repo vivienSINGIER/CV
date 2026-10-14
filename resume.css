@@ -1,0 +1,136 @@
+* { margin:0; padding:0; box-sizing:border-box; }
+html { background:#ffffff; }
+body {
+  background:#ffffff; color:#1c1f24;
+  font-family:'IBM Plex Sans', sans-serif;
+  font-size:10.5pt; line-height:1.48;
+}
+
+/* ============================================================
+   PAGE SIZE — A4 (21cm x 29.7cm), locked to exactly one page.
+   Content taller than this is clipped rather than flowing to a 2nd page.
+   ============================================================ */
+@page { size: 21cm 29.7cm; margin: 0; }
+@media print {
+  body { width: 21cm; }
+}
+
+.resume-table { display:table; table-layout:fixed; width:21cm; height:29.5cm; margin:0 auto; border-collapse:collapse; overflow:hidden; }
+.sidebar-cell {
+  display:table-cell; width:7.6cm; vertical-align:top;
+  background:#f4f2ee;
+  padding:0.7cm 0.85cm 1.3cm;
+  box-shadow: inset -1px 0 0 #d8d5cf;
+}
+.main-cell {
+  display:table-cell; vertical-align:top;
+  background:#ffffff;
+  padding:1.3cm 1.2cm;
+}
+
+.sb-section, .entry { break-inside:avoid; page-break-inside:avoid; }
+
+/* On-screen preview so it looks like an A4 page before you print */
+@media screen {
+  body { background:#e9e9e9; padding:1cm 0; }
+  .resume-table { box-shadow:0 0 12px rgba(0,0,0,0.2); }
+}
+
+.photo-wrap { margin-bottom:12px; }
+.photo {
+  width:2.7cm; height:2.7cm;
+  border-radius:50%;
+  object-fit:cover;
+  border:1px solid #c9c6bf;
+  display:block;
+}
+
+h1 {
+  font-family:'IBM Plex Mono', monospace;
+  font-weight:500; font-size:17pt;
+  letter-spacing:-0.01em; line-height:1.2;
+  color:#14161a;
+}
+.title-line {
+  font-family:'IBM Plex Mono', monospace;
+  color:#b5651d; font-size:9pt; margin-top:6px;
+}
+
+.sb-section { margin-top:18px; }
+.sb-section:first-of-type { margin-top:14px; }
+.sb-title {
+  font-family:'IBM Plex Mono', monospace; font-size:7.6pt;
+  letter-spacing:0.1em; text-transform:uppercase; color:#6b7078;
+  border-bottom:1px solid #c9c6bf;
+  padding-bottom:5px; margin-bottom:8px;
+}
+.contact-list div {
+  font-family:'IBM Plex Mono', monospace; font-size:8pt;
+  color:#33373d; margin-bottom:6px; word-break:break-all;
+}
+.contact-list div:before { content:"→ "; color:#b5651d; }
+.contact-list a { color:inherit; text-decoration:none; }
+
+.skill-group { margin-bottom:9px; }
+.skill-group-label {
+  font-family:'IBM Plex Mono', monospace; font-size:7.4pt;
+  color:#b5651d; text-transform:uppercase; letter-spacing:0.06em;
+  margin-bottom:4px;
+}
+.skill-tag {
+  display:inline-block;
+  font-family:'IBM Plex Mono', monospace; font-size:7.5pt;
+  color:#33373d; background:#ffffff;
+  border:1px solid #c9c6bf; border-radius:2px;
+  padding:2px 6px; margin:0 4px 4px 0;
+}
+
+.edu-school {
+  font-family:'IBM Plex Mono', monospace; font-weight:600;
+  font-size:8.4pt; color:#14161a;
+}
+.edu-detail { font-size:7.9pt; color:#6b7078; margin-top:2px; margin-bottom:6px; }
+
+.lang-row {
+  display:flex; justify-content:space-between; align-items:baseline;
+  margin-bottom:5px;
+}
+.lang-name { font-size:8.4pt; color:#14161a; }
+.lang-level {
+  font-family:'IBM Plex Mono', monospace; font-size:7.4pt;
+  color:#b5651d; text-transform:uppercase; letter-spacing:0.04em;
+}
+
+.section { margin-bottom:20px; }
+.section-title {
+  font-family:'IBM Plex Mono', monospace; font-size:9pt;
+  letter-spacing:0.1em; text-transform:uppercase; color:#b5651d;
+  border-bottom:1px solid #d8d5cf;
+  padding-bottom:5px; margin-bottom:11px;
+}
+.section-title:before { content:"// "; color:#8a8f98; }
+
+.summary { color:#33373d; }
+
+.entry { margin-bottom:14px; }
+.entry-head { width:100%; }
+.entry-head td { vertical-align:top; }
+.entry-title {
+  font-family:'IBM Plex Mono', monospace; font-weight:600;
+  font-size:10pt; color:#14161a;
+}
+.entry-org { color:#6b7078; font-size:8.8pt; margin-top:2px; }
+.entry-org a { color:inherit; text-decoration:none; }
+.entry-dates {
+  font-family:'IBM Plex Mono', monospace; font-size:8pt;
+  color:#6b7078; text-align:right; white-space:nowrap;
+}
+ul.bullets { margin-top:7px; padding-left:0; list-style:none; }
+ul.bullets li {
+  position:relative; padding-left:14px; margin-bottom:5px;
+  color:#33373d; font-size:9.2pt;
+}
+ul.bullets li:before {
+  content:"–"; position:absolute; left:0; color:#b5651d;
+  font-family:'IBM Plex Mono', monospace; font-size:9.2pt;
+}

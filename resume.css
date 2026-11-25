@@ -19,7 +19,7 @@ body {
 .sidebar-cell {
   display:table-cell; width:6.6cm; vertical-align:top;
   background:#f4f2ee;
-  padding:0.7cm 0.7cm 1.3cm;
+  padding:0.7cm 0.7cm 0.7cm;
   box-shadow: inset -1px 0 0 #d8d5cf;
 }
 .main-cell {

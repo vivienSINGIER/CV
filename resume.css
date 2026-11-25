@@ -120,7 +120,7 @@ h1 {
   font-size:10pt; color:#14161a;
 }
 .entry-org { color:#6b7078; font-size:8.8pt; margin-top:2px; }
-.entry-org a { color:inherit; text-decoration:none; }
+.entry-org a { color:inherit; text-decoration:underline; text-underline-offset:2px; }
 .entry-dates {
   font-family:'IBM Plex Mono', monospace; font-size:8pt;
   color:#6b7078; text-align:right; white-space:nowrap;
@@ -137,13 +137,12 @@ ul.bullets li:before {
 
 .entry-skills { margin-top:4px; line-height:1; }
 .skill-chip {
-  display:inline-flex; align-items:center; gap:4px;
+  display:inline-block; vertical-align:top;
   font-family:'IBM Plex Mono', monospace; font-size:6.8pt;
   color:#33373d; background:#f4f2ee;
   border:1px solid #d8d5cf; border-radius:2px;
   padding:2px 5px; margin:0 3px 3px 0; line-height:1.2;
 }
-.skill-chip img { width:10px; height:10px; display:block; }
 
 .interest { margin-bottom:7px; }
 .interest-name {

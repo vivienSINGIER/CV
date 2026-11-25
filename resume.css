@@ -101,7 +101,7 @@ h1 {
   color:#b5651d; text-transform:uppercase; letter-spacing:0.04em;
 }
 
-.section { margin-bottom:20px; }
+.section { margin-bottom:16px; }
 .section-title {
   font-family:'IBM Plex Mono', monospace; font-size:9pt;
   letter-spacing:0.1em; text-transform:uppercase; color:#b5651d;
@@ -110,9 +110,9 @@ h1 {
 }
 .section-title:before { content:"// "; color:#8a8f98; }
 
-.summary { color:#33373d; }
+.sb-summary { font-size:8.4pt; line-height:1.45; color:#33373d; }
 
-.entry { margin-bottom:14px; }
+.entry { margin-bottom:11px; }
 .entry-head { width:100%; }
 .entry-head td { vertical-align:top; }
 .entry-title {
@@ -125,12 +125,30 @@ h1 {
   font-family:'IBM Plex Mono', monospace; font-size:8pt;
   color:#6b7078; text-align:right; white-space:nowrap;
 }
-ul.bullets { margin-top:7px; padding-left:0; list-style:none; }
+ul.bullets { margin-top:5px; padding-left:0; list-style:none; }
 ul.bullets li {
-  position:relative; padding-left:14px; margin-bottom:5px;
+  position:relative; padding-left:14px; margin-bottom:3px;
   color:#33373d; font-size:9.2pt;
 }
 ul.bullets li:before {
   content:"–"; position:absolute; left:0; color:#b5651d;
   font-family:'IBM Plex Mono', monospace; font-size:9.2pt;
 }
+
+.entry-skills { margin-top:4px; line-height:1; }
+.skill-chip {
+  display:inline-flex; align-items:center; gap:4px;
+  font-family:'IBM Plex Mono', monospace; font-size:6.8pt;
+  color:#33373d; background:#f4f2ee;
+  border:1px solid #d8d5cf; border-radius:2px;
+  padding:2px 5px; margin:0 3px 3px 0; line-height:1.2;
+}
+.skill-chip img { width:10px; height:10px; display:block; }
+
+.interest { margin-bottom:7px; }
+.interest-name {
+  font-family:'IBM Plex Mono', monospace; font-weight:600;
+  font-size:8.4pt; color:#14161a;
+}
+.interest-name:before { content:"→ "; color:#b5651d; font-weight:400; }
+.interest-detail { font-size:7.9pt; color:#6b7078; margin-top:1px; }
